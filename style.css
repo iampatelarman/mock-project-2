@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Delius+Unicase:wght@700&family=Inter:wght@700&family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --shadow: 3px 6px 10px 0px rgba(0, 0, 0, 0.44);
+}
+
+/* ============= NAVBAR ================ */
+nav {
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6f6af7;
+  color: #fff;
+  padding: 0 2.5rem;
+  position: sticky;
+  top: 0;
+}
+
+nav h1 {
+  font-family: "Delius Unicase", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav li {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.more img {
+  height: 10px;
+  width: 10px;
+}
+
+nav input {
+  font-size: 1rem;
+  padding: 7px 14px;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 40px;
+  border: none;
+  background: white url("./search.svg") no-repeat center;
+  background-size: 1rem;
+  background-position: right 12px top 8px;
+}
+input::placeholder {
+  color: #9f9f9f;
+  font-family: "DM Sans", sans-serif;
+}
+input[type="search"]:focus {
+  outline: none;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+}
+nav img {
+  height: 40px;
+  width: 40px;
+}
+
+/* ============== MAIN ================= */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-left: 60px;
+  gap: 50px;
+}
+
+.main-img {
+  width: 320px;
+  height: 370px;
+  box-shadow: var(--shadow);
+  border-radius: 14px;
+}
+.text-card {
+  background-color: #e5d8ff;
+  height: 370px;
+  width: 670px;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 2px 4px 14px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.text-card p {
+  color: #6f7373;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* social icons */
+.chatbox {
+  height: 130px;
+  width: 130px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 1;
+}
+
+.social-icons {
+  margin-top: 150px;
+  display: flex;
+  float: right;
+  flex-direction: column;
+  position: sticky;
+  top: 6rem;
+}
+.social-icons img {
+  width: 60px;
+  height: 60px;
+  position: sticky;
+}
+
+.small-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 4rem;
+}
+
+.small-cards div {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem 3rem;
+}
+.small-cards h2 {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+.questions {
+  background-color: #929dff;
+}
+.answers {
+  background-color: #734cf2;
+}
+.participated {
+  background-color: #d288ff;
+}
+.passed {
+  background-color: #000000;
+}
+
+/* ==========  info section =========== */
+
+section {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+.info {
+  display: flex;
+  padding: 1rem;
+  gap: 20px;
+  background-color: #483eff;
+  border-radius: 20px;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.tabs div {
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  color: white;
+  text-align: center;
+  /* height: 100px; */
+  width: 200px;
+}
+.tabs h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+
+.tab-content {
+  height: 400px;
+  width: 100%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.tab-content h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 2px;
+  color: #04285a;
+}
+table {
+  padding: 1rem;
+  text-align: left;
+}
+table th {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 2;
+  letter-spacing: 2px;
+  padding: 0.15rem 0.25rem;
+  color: #04285a;
+  text-transform: capitalize;
+}
+table td {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: 1px;
+  padding: 0.15rem 0.25rem;
+  color: #143565;
+}
+
+.next-btn {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #000000;
+  color: white;
+  padding: 5px 18px;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: 2px;
+  right: 30px;
+  bottom: 30px;
+}
+.next-arrow {
+  width: 20px;
+}
